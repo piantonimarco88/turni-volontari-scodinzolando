@@ -19,16 +19,11 @@ const ORARI_STANDARD = {
 };
 
 // Soglie colore copertura: numero di volontari registrati per quel turno/giorno.
-const COVERAGE_LABELS = {
-  empty: "Nessuno (urgente)",
-  low: "Scarso",
-  mid: "Discreto",
-  good: "Ben coperto",
-};
+// 0 = urgente, 1-2 = scarso, 3 = medio, 4+ = ben coperto.
 function coverageLevel(count) {
   if (count <= 0) return "empty";
-  if (count === 1) return "low";
-  if (count === 2) return "mid";
+  if (count <= 2) return "low";
+  if (count === 3) return "mid";
   return "good";
 }
 
@@ -36,6 +31,7 @@ const DOG_PHOTOS = [
   "assets/dog-happy-1.jpeg",
   "assets/dog-happy-2.jpeg",
   "assets/dog-happy-3.jpeg",
+  "assets/dog-happy-4.jpeg",
 ];
 
 const DOG_MESSAGES = [

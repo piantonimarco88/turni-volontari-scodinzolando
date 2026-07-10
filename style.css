@@ -8,6 +8,7 @@
   --color-green: #2e9c4f;
   --color-brown: #6b3a1f;
   --color-bg: #fffaf0;
+  --color-page-bg: #fffdf9;
   --color-surface: #ffffff;
   --color-text: #2b2118;
   --color-text-muted: #7a6b5a;
@@ -29,7 +30,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: var(--color-bg);
+  background: var(--color-page-bg);
   color: var(--color-text);
   font-family: "Segoe UI", "Trebuchet MS", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
