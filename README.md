@@ -59,7 +59,7 @@ Repository: [github.com/piantonimarco88/turni-volontari-scodinzolando](https://g
 
 Tutte le personalizzazioni si fanno modificando poche righe in cima a [app.js](app.js):
 
-- **Elenco volontari** — costante `VOLONTARI` (array di nomi): aggiungi, rimuovi o rinomina liberamente.
+- **Elenco volontari** — costante `VOLONTARI` in [app.js](app.js): array di oggetti `{ nome, responsabile }`. Aggiungi, rimuovi o rinomina liberamente. Metti `responsabile: true` per i volontari con ruolo di responsabile: verranno evidenziati in grassetto con badge ovunque compaiano (elenco inserimenti, dettaglio giornata, menu a tendina, statistiche) e con un anello attorno al pallino del turno nel calendario (👑 al posto di ⭐ per i turni liberi).
 - **Orari standard di mattina/pomeriggio** — costante `ORARI_STANDARD`.
 - **Soglie colore copertura calendario** (quante presenze = "ben coperto" ecc.) — funzione `coverageLevel()`.
 
