@@ -383,6 +383,18 @@ textarea { resize: vertical; min-height: 60px; font-family: inherit; }
   padding: 12px 0;
   border-bottom: 1px solid var(--color-border);
 }
+
+.day-detail-section {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-yellow-dark);
+  padding-bottom: 6px;
+  margin-top: 16px;
+  border-bottom: 2px solid var(--color-yellow);
+}
+.day-detail-section:first-child { margin-top: 0; }
 .entry-item:last-child, .log-item:last-child { border-bottom: none; }
 
 .entry-main, .log-main { min-width: 0; }

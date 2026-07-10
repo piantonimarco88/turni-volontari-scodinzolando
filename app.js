@@ -392,12 +392,20 @@ function groupEntriesByDate() {
 }
 
 function openDayDetail(dateKey) {
-  const dayEntries = entries.filter((e) => e.data === dateKey)
-    .sort((a, b) => (a.turno > b.turno ? 1 : -1));
+  const dayEntries = entries.filter((e) => e.data === dateKey);
 
-  const rows = dayEntries.length
-    ? dayEntries.map((e) => entryRowHtml(e, true)).join("")
-    : `<div class="empty-state">Nessun turno registrato per questo giorno.</div>`;
+  const gruppi = [
+    { turno: "mattina", label: `${ORARI_STANDARD.mattina.icona} Mattina` },
+    { turno: "pomeriggio", label: `${ORARI_STANDARD.pomeriggio.icona} Pomeriggio` },
+    { turno: "libero", label: "🕒 Turni liberi" },
+  ];
+  let rows = gruppi.map(({ turno, label }) => {
+    const gruppoEntries = dayEntries.filter((e) => e.turno === turno);
+    if (!gruppoEntries.length) return "";
+    return `<div class="day-detail-section">${label}</div>${gruppoEntries.map((e) => entryRowHtml(e, true)).join("")}`;
+  }).join("");
+
+  if (!rows) rows = `<div class="empty-state">Nessun turno registrato per questo giorno.</div>`;
 
   openModal(`
     <h3>${formatDateHuman(dateKey)}</h3>
