@@ -4,14 +4,20 @@ import { firebaseConfig } from "./firebase-config.js";
    CONFIGURAZIONE — modifica qui elenco volontari e orari standard
    ====================================================================== */
 
+// Aggiungi "responsabile: true" ai volontari che ricoprono un ruolo di responsabile.
 const VOLONTARI = [
-  "Anna Bianchi",
-  "Marco Rossi",
-  "Giulia Verdi",
-  "Luca Ferrari",
-  "Sara Romano",
-  "Paolo Colombo",
+  { nome: "Anna Bianchi", responsabile: true },
+  { nome: "Marco Rossi", responsabile: false },
+  { nome: "Giulia Verdi", responsabile: false },
+  { nome: "Luca Ferrari", responsabile: false },
+  { nome: "Sara Romano", responsabile: false },
+  { nome: "Paolo Colombo", responsabile: false },
 ];
+
+function isResponsabile(persona) {
+  const v = VOLONTARI.find((v) => v.nome === persona);
+  return !!(v && v.responsabile);
+}
 
 const ORARI_STANDARD = {
   mattina: { inizio: "09:00", fine: "13:00", label: "Mattina", icona: "🌅" },
@@ -300,7 +306,7 @@ function populatePersonSelects() {
   selects.forEach(({ el, withAll }) => {
     el.innerHTML = "";
     if (withAll) el.appendChild(new Option("Tutti/e", ""));
-    VOLONTARI.forEach((p) => el.appendChild(new Option(p, p)));
+    VOLONTARI.forEach((v) => el.appendChild(new Option(v.responsabile ? `★ ${v.nome}` : v.nome, v.nome)));
   });
 }
 
@@ -339,18 +345,21 @@ function renderCalendar() {
     const isOutside = d.getMonth() !== month;
     const isToday = key === todayKey();
 
-    const mattinaCount = dayEntries.filter((e) => e.turno === "mattina").length;
-    const pomeriggioCount = dayEntries.filter((e) => e.turno === "pomeriggio").length;
-    const hasLibero = dayEntries.some((e) => e.turno === "libero");
+    const mattinaEntries = dayEntries.filter((e) => e.turno === "mattina");
+    const pomeriggioEntries = dayEntries.filter((e) => e.turno === "pomeriggio");
+    const liberoEntries = dayEntries.filter((e) => e.turno === "libero");
+    const mattinaResp = mattinaEntries.some((e) => isResponsabile(e.persona));
+    const pomeriggioResp = pomeriggioEntries.some((e) => isResponsabile(e.persona));
+    const liberoResp = liberoEntries.some((e) => isResponsabile(e.persona));
 
     const slots = `
-      <span class="slot-dot coverage-${coverageLevel(mattinaCount)}" title="Mattina: ${mattinaCount} presenti"></span>
-      <span class="slot-dot coverage-${coverageLevel(pomeriggioCount)}" title="Pomeriggio: ${pomeriggioCount} presenti"></span>
+      <span class="slot-dot coverage-${coverageLevel(mattinaEntries.length)} ${mattinaResp ? "has-responsabile" : ""}" title="Mattina: ${mattinaEntries.length} presenti${mattinaResp ? " (con responsabile)" : ""}"></span>
+      <span class="slot-dot coverage-${coverageLevel(pomeriggioEntries.length)} ${pomeriggioResp ? "has-responsabile" : ""}" title="Pomeriggio: ${pomeriggioEntries.length} presenti${pomeriggioResp ? " (con responsabile)" : ""}"></span>
     `;
 
     html += `
       <div class="cal-day ${isOutside ? "is-outside" : ""} ${isToday ? "is-today" : ""} ${dayEntries.length ? "has-data" : ""}" data-date="${key}">
-        ${hasLibero ? '<span class="cal-day-star">⭐</span>' : ""}
+        ${liberoEntries.length ? `<span class="cal-day-star">${liberoResp ? "👑" : "⭐"}</span>` : ""}
         <span class="cal-day-num">${d.getDate()}</span>
         <div class="cal-day-slots">${slots}</div>
       </div>
@@ -532,11 +541,13 @@ async function deleteEntry(entry) {
    ====================================================================== */
 
 function entryRowHtml(e, compact = false) {
+  const resp = isResponsabile(e.persona);
+  const nomeHtml = resp ? `<strong class="nome-responsabile">${escapeHtml(e.persona)}</strong>` : escapeHtml(e.persona);
   return `
     <div class="entry-item" data-id="${e.id}">
       <div class="entry-main">
-        <div class="entry-title">${escapeHtml(e.persona)}${compact ? "" : ` — ${formatDateHuman(e.data)}`}</div>
-        <div class="entry-sub"><span class="badge badge-turno">${turnoLabel(e)}</span></div>
+        <div class="entry-title">${nomeHtml}${compact ? "" : ` — ${formatDateHuman(e.data)}`}</div>
+        <div class="entry-sub">${resp ? `<span class="badge badge-responsabile">★ Responsabile</span>` : ""}<span class="badge badge-turno">${turnoLabel(e)}</span></div>
         ${e.note ? `<div class="entry-note">"${escapeHtml(e.note)}"</div>` : ""}
       </div>
       <div class="entry-actions">
@@ -622,16 +633,16 @@ function renderStats() {
 
 function renderPerPersonaStats(list) {
   const counts = {};
-  VOLONTARI.forEach((p) => (counts[p] = 0));
+  VOLONTARI.forEach((v) => (counts[v.nome] = 0));
   list.forEach((e) => { if (e.persona in counts) counts[e.persona]++; });
 
   const maxVal = Math.max(1, ...Object.values(counts));
 
-  const html = VOLONTARI.map((p) => `
+  const html = VOLONTARI.map((v) => `
     <div class="bar-row">
-      <div class="bar-name" title="${escapeHtml(p)}">${escapeHtml(p)}</div>
-      <div class="bar-track"><div class="bar-fill" style="width:${(counts[p] / maxVal) * 100}%"></div></div>
-      <div class="bar-count">${counts[p]}</div>
+      <div class="bar-name" title="${escapeHtml(v.nome)}">${v.responsabile ? `<strong>★ ${escapeHtml(v.nome)}</strong>` : escapeHtml(v.nome)}</div>
+      <div class="bar-track"><div class="bar-fill" style="width:${(counts[v.nome] / maxVal) * 100}%"></div></div>
+      <div class="bar-count">${counts[v.nome]}</div>
     </div>
   `).join("");
 
