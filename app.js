@@ -602,7 +602,8 @@ function renderStats() {
   cutoff.setDate(cutoff.getDate() - days);
   const cutoffKey = toDateKey(cutoff);
 
-  const list = entries.filter((e) => e.data >= cutoffKey);
+  // Esclude gli inserimenti caricati in blocco prima dell'anagrafica reale (solo per visibilità in calendario).
+  const list = entries.filter((e) => e.data >= cutoffKey && !e.excludeFromStats);
   const giorniCoperti = new Set(list.map((e) => e.data)).size;
 
   // turno più scoperto: tra i giorni/turni standard con almeno un inserimento, il minimo presenze
@@ -704,7 +705,8 @@ function renderLog() {
   const persona = document.getElementById("log-filter-persona").value;
   const azione = document.getElementById("log-filter-azione").value;
 
-  let list = logEntries.slice();
+  // Esclude i log del caricamento in blocco pre-anagrafica (solo per visibilità in calendario).
+  let list = logEntries.filter((l) => !l.excludeFromStats);
   if (persona) list = list.filter((l) => l.persona === persona);
   if (azione) list = list.filter((l) => l.azione === azione);
   list.sort((a, b) => b.timestamp - a.timestamp);
