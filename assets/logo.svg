@@ -1,0 +1,53 @@
+<svg viewBox="0 0 400 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path id="arcText" d="M40,375 Q200,335 360,375" fill="none" />
+  </defs>
+
+  <!-- corpo -->
+  <path d="M128,178 C128,150 160,140 200,140
+           C240,140 272,150 272,178
+           L272,275
+           C272,305 245,322 200,322
+           C155,322 128,305 128,275
+           Z"
+        fill="#F4C430" stroke="#2B2118" stroke-width="4" stroke-linejoin="round" />
+
+  <!-- linea pancia -->
+  <path d="M176,198 C181,235 179,272 170,308" fill="none" stroke="#2B2118" stroke-width="2.5" opacity="0.3" stroke-linecap="round" />
+
+  <!-- coda scodinzolante -->
+  <path d="M126,268 C104,260 96,244 106,228" fill="none" stroke="#2B2118" stroke-width="4" stroke-linecap="round" />
+  <path d="M118,288 C96,282 86,266 96,250" fill="none" stroke="#2B2118" stroke-width="3" stroke-linecap="round" opacity="0.65" />
+  <path d="M110,306 C90,302 78,288 86,272" fill="none" stroke="#2B2118" stroke-width="2.5" stroke-linecap="round" opacity="0.4" />
+
+  <!-- orecchie -->
+  <ellipse cx="148" cy="90" rx="32" ry="48" fill="#B23A2E" stroke="#2B2118" stroke-width="4" transform="rotate(-18 148 90)" />
+  <ellipse cx="252" cy="90" rx="32" ry="48" fill="#B23A2E" stroke="#2B2118" stroke-width="4" transform="rotate(18 252 90)" />
+
+  <!-- testa -->
+  <circle cx="200" cy="125" r="68" fill="#F4C430" stroke="#2B2118" stroke-width="4" />
+
+  <!-- guance -->
+  <ellipse cx="163" cy="143" rx="16" ry="9" fill="#FBE49A" opacity="0.6" />
+  <ellipse cx="237" cy="143" rx="16" ry="9" fill="#FBE49A" opacity="0.6" />
+
+  <!-- occhi -->
+  <circle cx="175" cy="117" r="6.5" fill="#2B2118" />
+  <circle cx="225" cy="117" r="6.5" fill="#2B2118" />
+
+  <!-- naso -->
+  <ellipse cx="200" cy="145" rx="15" ry="10" fill="#2B2118" />
+
+  <!-- bocca -->
+  <path d="M200,155 L200,160" stroke="#2B2118" stroke-width="3" stroke-linecap="round" />
+  <path d="M188,160 C193,169 207,169 212,160" fill="none" stroke="#2B2118" stroke-width="3" stroke-linecap="round" />
+
+  <!-- testo arcuato "SCODINZOLANDO" -->
+  <text font-family="Segoe UI, Trebuchet MS, sans-serif" font-weight="800" font-size="25" fill="#2E9C4F" letter-spacing="1">
+    <textPath href="#arcText" startOffset="50%" text-anchor="middle">SCODINZOLANDO</textPath>
+  </text>
+
+  <!-- testo "ODV" -->
+  <text x="200" y="425" font-family="Segoe UI, Trebuchet MS, sans-serif" font-weight="800" font-size="32"
+        fill="#C0392B" text-anchor="middle" letter-spacing="3">ODV</text>
+</svg>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<title>Turni Volontari — Scodinzolando ODV</title>
+<link rel="icon" href="assets/logo.jpg" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="app-header">
+  <div class="brand">
+    <img src="assets/logo.jpg" alt="Logo Scodinzolando ODV" class="logo" />
+    <div class="brand-text">
+      <h1>Turni Volontari</h1>
+      <p>Scodinzolando ODV</p>
+    </div>
+  </div>
+  <div class="header-actions">
+    <button id="btn-export-excel" class="btn btn-secondary btn-small">📥 Esporta Excel</button>
+    <div id="connection-status" class="status-pill status-offline">Connessione…</div>
+  </div>
+</header>
+
+<nav class="tabbar" id="tabbar">
+  <button class="tab-btn active" data-tab="calendario">📅 <span>Calendario</span></button>
+  <button class="tab-btn" data-tab="inserisci">✏️ <span>Inserisci</span></button>
+  <button class="tab-btn" data-tab="statistiche">📊 <span>Statistiche</span></button>
+  <button class="tab-btn" data-tab="log">📋 <span>Log</span></button>
+</nav>
+
+<main id="app-main">
+
+  <!-- ===== CALENDARIO ===== -->
+  <section id="tab-calendario" class="tab-panel active">
+    <div class="card">
+      <div class="cal-nav">
+        <button id="cal-prev" aria-label="Mese precedente">‹</button>
+        <h2 id="cal-title"></h2>
+        <button id="cal-next" aria-label="Mese successivo">›</button>
+      </div>
+      <button id="cal-today" class="btn btn-secondary cal-today-btn" style="margin-bottom:12px;">Vai a oggi</button>
+      <div class="cal-grid" id="cal-weekdays"></div>
+      <div class="cal-grid" id="cal-grid" style="margin-top:4px;"></div>
+      <div class="cal-legend">
+        <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--coverage-empty)"></span>Nessuno (urgente)</div>
+        <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--coverage-low)"></span>Scarso</div>
+        <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--coverage-mid)"></span>Discreto</div>
+        <div class="cal-legend-item"><span class="cal-legend-dot" style="background:var(--coverage-good)"></span>Ben coperto</div>
+        <div class="cal-legend-item">⭐ turno libero presente</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INSERISCI ===== -->
+  <section id="tab-inserisci" class="tab-panel">
+    <div class="card">
+      <h2 id="entry-form-title">Nuovo inserimento</h2>
+      <form id="entry-form">
+        <input type="hidden" id="f-entry-id" value="" />
+
+        <div class="form-group">
+          <label for="f-persona">Volontario/a</label>
+          <select id="f-persona" required></select>
+        </div>
+
+        <div class="form-group">
+          <label for="f-data">Data</label>
+          <input type="date" id="f-data" required />
+        </div>
+
+        <div class="form-group">
+          <label>Turno</label>
+          <div class="toggle-group" id="f-turno-group">
+            <button type="button" class="toggle-btn" data-field="turno" data-value="mattina">🌅 Mattina</button>
+            <button type="button" class="toggle-btn" data-field="turno" data-value="pomeriggio">🌇 Pomeriggio</button>
+            <button type="button" class="toggle-btn" data-field="turno" data-value="libero">🕒 Libero</button>
+          </div>
+          <div class="libero-orari hidden" id="libero-orari">
+            <div>
+              <label for="f-ora-inizio">Dalle</label>
+              <input type="time" id="f-ora-inizio" />
+            </div>
+            <div>
+              <label for="f-ora-fine">Alle</label>
+              <input type="time" id="f-ora-fine" />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="f-note">Note (facoltative)</label>
+          <textarea id="f-note" placeholder="Es. dettagli turno libero, cose da portare…"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary" id="btn-save-entry">Salva</button>
+          <button type="button" class="btn btn-secondary hidden" id="btn-cancel-edit">Annulla modifica</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Inserimenti</h2>
+      <div class="filters-row">
+        <select id="filter-persona"></select>
+        <select id="filter-periodo">
+          <option value="futuri">Da oggi in poi</option>
+          <option value="tutti">Tutti</option>
+          <option value="passati">Passati</option>
+        </select>
+      </div>
+      <div id="entries-list"></div>
+    </div>
+  </section>
+
+  <!-- ===== STATISTICHE ===== -->
+  <section id="tab-statistiche" class="tab-panel">
+    <div class="card">
+      <h2>Panoramica</h2>
+      <div class="filters-row">
+        <select id="stats-periodo">
+          <option value="30">Ultimi 30 giorni</option>
+          <option value="90">Ultimi 3 mesi</option>
+          <option value="9999" selected>Da sempre</option>
+        </select>
+      </div>
+      <div class="stats-cards" id="stats-cards"></div>
+    </div>
+
+    <div class="card">
+      <h2>Presenze per volontario/a</h2>
+      <div id="stats-per-persona"></div>
+    </div>
+
+    <div class="card">
+      <h2>Copertura per giorno e turno</h2>
+      <p class="entry-sub" style="margin-bottom:10px;">Media presenze registrate — aiuta a capire quali giorni hanno più bisogno di volontari.</p>
+      <div id="stats-coverage"></div>
+    </div>
+  </section>
+
+  <!-- ===== LOG ===== -->
+  <section id="tab-log" class="tab-panel">
+    <div class="card">
+      <h2>Log eventi</h2>
+      <div class="filters-row">
+        <select id="log-filter-persona"></select>
+        <select id="log-filter-azione">
+          <option value="">Tutte le azioni</option>
+          <option value="creazione">Creazione</option>
+          <option value="modifica">Modifica</option>
+          <option value="eliminazione">Eliminazione</option>
+        </select>
+      </div>
+      <div id="log-list"></div>
+      <div class="load-more-wrap">
+        <button id="log-load-more" class="btn btn-secondary hidden">Carica altri</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- Modal generico (dettaglio giorno) -->
+<div id="modal-overlay" class="modal-overlay hidden">
+  <div class="modal-box">
+    <button class="modal-close-x" id="modal-close">✕</button>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- Modal cane felice/triste -->
+<div id="dog-modal-overlay" class="modal-overlay hidden">
+  <div class="modal-dog">
+    <img id="modal-dog-img" src="" alt="" />
+    <p id="modal-dog-text"></p>
+    <button id="modal-dog-close" class="btn btn-primary">Chiudi</button>
+  </div>
+</div>
+
+<div id="toast-container" class="toast-container"></div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>

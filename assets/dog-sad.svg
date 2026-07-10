@@ -1,0 +1,28 @@
+<svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Placeholder: sostituisci con una foto reale mantenendo il nome file "dog-sad" (puoi usare .png/.jpg, basta aggiornare il src in app.js) -->
+
+  <!-- orecchie basse e cadenti -->
+  <ellipse cx="95" cy="150" rx="26" ry="52" fill="#B23A2E" stroke="#2B2118" stroke-width="4" transform="rotate(-8 95 150)" />
+  <ellipse cx="205" cy="150" rx="26" ry="52" fill="#B23A2E" stroke="#2B2118" stroke-width="4" transform="rotate(8 205 150)" />
+
+  <!-- testa -->
+  <circle cx="150" cy="140" r="82" fill="#F4C430" stroke="#2B2118" stroke-width="5" />
+
+  <!-- sopracciglia preoccupate -->
+  <path d="M108,108 Q120,118 133,113" fill="none" stroke="#2B2118" stroke-width="4" stroke-linecap="round" />
+  <path d="M192,108 Q180,118 167,113" fill="none" stroke="#2B2118" stroke-width="4" stroke-linecap="round" />
+
+  <!-- occhi tristi -->
+  <circle cx="122" cy="128" r="7" fill="#2B2118" />
+  <circle cx="178" cy="128" r="7" fill="#2B2118" />
+
+  <!-- lacrima -->
+  <path d="M118,140 C112,152 112,164 118,170 C124,164 124,152 118,140 Z" fill="#7EC8E3" stroke="#2B2118" stroke-width="1.5" />
+
+  <!-- naso -->
+  <ellipse cx="150" cy="150" rx="17" ry="12" fill="#2B2118" />
+
+  <!-- bocca imbronciata -->
+  <path d="M150,162 L150,168" stroke="#2B2118" stroke-width="3" stroke-linecap="round" />
+  <path d="M122,188 Q150,168 178,188" fill="none" stroke="#2B2118" stroke-width="4" stroke-linecap="round" />
+</svg>
