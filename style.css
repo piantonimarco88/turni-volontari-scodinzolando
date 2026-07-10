@@ -115,8 +115,8 @@ h1, h2, h3 { margin: 0; }
 /* ---------- Tabbar ---------- */
 .tabbar {
   display: flex;
-  gap: 4px;
-  padding: 6px 10px;
+  gap: 6px;
+  padding: 8px 10px;
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
   position: sticky;
@@ -130,19 +130,19 @@ h1, h2, h3 { margin: 0; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
-  padding: 8px 6px;
+  gap: 3px;
+  padding: 12px 8px;
   border: none;
   background: transparent;
   border-radius: var(--radius-sm);
   color: var(--color-text-muted);
-  font-size: 11px;
+  font-size: 13px;
   font-weight: 600;
   white-space: nowrap;
   transition: background 0.15s, color 0.15s;
 }
 
-.tab-btn span { font-size: 11px; }
+.tab-btn span { font-size: 13px; }
 
 .tab-btn.active {
   background: var(--color-yellow);
@@ -568,7 +568,8 @@ textarea { resize: vertical; min-height: 60px; font-family: inherit; }
 @media (min-width: 720px) {
   .app-header { padding: 16px 28px; }
   .tabbar { top: 78px; justify-content: center; }
-  .tab-btn { flex: 0 1 160px; flex-direction: row; font-size: 13px; }
+  .tab-btn { flex: 0 1 190px; flex-direction: row; gap: 8px; font-size: 16px; padding: 14px 18px; }
+  .tab-btn span { font-size: 16px; }
   #app-main { padding: 24px; }
   .brand-text h1 { font-size: 18px; }
 }
