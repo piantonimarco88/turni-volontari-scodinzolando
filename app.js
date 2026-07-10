@@ -32,6 +32,23 @@ function coverageLevel(count) {
   return "good";
 }
 
+const DOG_PHOTOS = [
+  "assets/dog-happy-1.jpeg",
+  "assets/dog-happy-2.jpeg",
+  "assets/dog-happy-3.jpeg",
+];
+
+const DOG_MESSAGES = [
+  "Grazie, ti porterò la mia pallina preferita! 🎾",
+  "Non vedo l'ora di passare del tempo insieme!",
+  "Ecco qui per te il mio sorriso migliore 😄",
+  "Scodinzolo già dalla gioia!",
+  "Ti aspetto con la coda che non sta ferma un attimo!",
+  "Grazie di cuore, ci vediamo presto!",
+  "Hai appena fatto la mia giornata!",
+  "Preparo le coccole migliori per te 🐾",
+];
+
 const GIORNI_SETTIMANA = ["Lun", "Mar", "Mer", "Gio", "Ven", "Sab", "Dom"];
 const MESI = [
   "Gennaio", "Febbraio", "Marzo", "Aprile", "Maggio", "Giugno",
@@ -260,9 +277,9 @@ function closeModal() { document.getElementById("modal-overlay").classList.add("
 function showDogModal() {
   const img = document.getElementById("modal-dog-img");
   const text = document.getElementById("modal-dog-text");
-  img.src = "assets/dog-happy.svg";
+  img.src = DOG_PHOTOS[Math.floor(Math.random() * DOG_PHOTOS.length)];
   img.alt = "Cane felice";
-  text.textContent = "Evviva! Presenza registrata 🐾";
+  text.textContent = DOG_MESSAGES[Math.floor(Math.random() * DOG_MESSAGES.length)];
   document.getElementById("dog-modal-overlay").classList.remove("hidden");
 }
 function closeDogModal() { document.getElementById("dog-modal-overlay").classList.add("hidden"); }

@@ -8,9 +8,9 @@ Sezioni: **Calendario** (colpo d'occhio sui giorni più/meno coperti) · **Inser
 
 Apri `index.html` con doppio click, oppure con un piccolo server locale. L'app parte in **modalità locale**: funziona subito, ma i dati restano solo nel browser di chi la apre e non sono condivisi con gli altri volontari. Serve solo per vedere grafica e funzionalità.
 
-## 2. Attiva la condivisione tra tutti i volontari (Firebase)
+## 2. Condivisione tra tutti i volontari (Firebase) — già attiva
 
-Per far sì che un turno inserito da un volontario sia visibile a tutti gli altri, in tempo reale, serve un progetto Firebase gratuito (nessuna carta di credito richiesta per l'uso previsto qui).
+Il progetto Firebase è già configurato e collegato (`firebase-config.js` contiene le chiavi reali): un turno inserito da un volontario è visibile a tutti gli altri in tempo reale, senza bisogno di rifare questi passaggi. Restano qui come riferimento nel caso in futuro serva ricreare il progetto da zero.
 
 1. Vai su [console.firebase.google.com](https://console.firebase.google.com) e accedi con un account Google.
 2. **Aggiungi progetto** → dai un nome (es. "scodinzolando-turni") → puoi disattivare Google Analytics, non serve.
@@ -51,10 +51,9 @@ Per far sì che un turno inserito da un volontario sia visibile a tutti gli altr
 
 ## 3. Pubblica il sito (per avere un link da condividere)
 
-Qualsiasi hosting statico gratuito va bene, ad esempio:
+Il sito è pubblicato su **GitHub Pages**: 🔗 **https://piantonimarco88.github.io/turni-volontari-scodinzolando/**
 
-- **Netlify (più semplice)**: vai su [app.netlify.com/drop](https://app.netlify.com/drop) e trascina l'intera cartella del progetto. In pochi secondi ottieni un link pubblico.
-- **GitHub Pages**: carica i file in un repository GitHub, poi Impostazioni → Pages → seleziona il branch. Utile se in futuro volete versionare le modifiche.
+Repository: [github.com/piantonimarco88/turni-volontari-scodinzolando](https://github.com/piantonimarco88/turni-volontari-scodinzolando). Ogni `git push` sul branch `main` aggiorna il sito pubblicato in 1-2 minuti.
 
 ## 4. Personalizzazioni comuni
 
@@ -64,25 +63,24 @@ Tutte le personalizzazioni si fanno modificando poche righe in cima a [app.js](a
 - **Orari standard di mattina/pomeriggio** — costante `ORARI_STANDARD`.
 - **Soglie colore copertura calendario** (quante presenze = "ben coperto" ecc.) — funzione `coverageLevel()`.
 
-## 5. Foto cane felice / cane triste
+## 5. Foto cane felice
 
-Quando si registra una **presenza** compare l'immagine `assets/dog-happy.svg`, per un'**assenza** `assets/dog-sad.svg`. Sono disegni segnaposto: quando avrai le foto reali, sostituisci semplicemente i due file mantenendo lo stesso percorso (se userai `.png` o `.jpg` invece di `.svg`, aggiorna anche i due riferimenti `assets/dog-happy.svg` / `assets/dog-sad.svg` nella funzione `showDogModal` in [app.js](app.js)).
+Quando si registra una presenza compare una foto vera del canile (scelta a caso tra `assets/dog-happy-1.jpeg`, `dog-happy-2.jpeg`, `dog-happy-3.jpeg`) insieme a un messaggio simpatico scelto a caso tra quelli nella costante `DOG_MESSAGES` in cima a [app.js](app.js). Per aggiungere altre foto: metti il file in `assets/` e aggiungi il percorso all'array `DOG_PHOTOS` in [app.js](app.js). Per aggiungere altri messaggi, aggiungili all'array `DOG_MESSAGES`.
 
 ## 6. Logo
 
-Il logo in [assets/logo.svg](assets/logo.svg) è una ricostruzione grafica del logo dell'associazione, usata come segnaposto. Per il logo ufficiale al 100% identico, sostituisci il file `assets/logo.svg` con il file originale (va bene anche `.png`: in tal caso aggiorna i due riferimenti `assets/logo.svg` in [index.html](index.html)).
+Il logo ufficiale dell'associazione è in [assets/logo.jpg](assets/logo.jpg), usato sia nell'header sia come icona del sito.
 
 ## Struttura del progetto
 
 ```
 index.html           struttura delle 4 sezioni
 style.css             stile, tema colori del logo, layout responsive
-app.js                logica: calendario, form, statistiche, log, Firebase/localStorage
-firebase-config.js    chiavi del progetto Firebase (da compilare, vedi punto 2)
+app.js                logica: calendario, form, statistiche, log, Firebase/localStorage, export Excel
+firebase-config.js    chiavi del progetto Firebase (già configurate)
 assets/
-  logo.svg             logo associazione
-  dog-happy.svg         mostrato dopo una presenza
-  dog-sad.svg            mostrato dopo un'assenza
+  logo.jpg             logo associazione
+  dog-happy-1/2/3.jpeg  foto mostrate a rotazione dopo una presenza
 ```
 
 Nessuna build, nessuna dipendenza da installare: sono solo file statici.
