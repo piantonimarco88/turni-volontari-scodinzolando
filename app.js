@@ -20,9 +20,12 @@ function isResponsabile(persona) {
 }
 
 const ORARI_STANDARD = {
-  mattina: { inizio: "09:00", fine: "13:00", label: "Mattina", icona: "🌅" },
-  pomeriggio: { inizio: "14:00", fine: "18:00", label: "Pomeriggio", icona: "🌇" },
+  mattina: { inizio: "08:30", fine: "12:30", label: "Mattina", icona: "🌅" },
+  pomeriggio: { inizio: "14:30", fine: "18:30", label: "Pomeriggio", icona: "🌇" },
 };
+
+// Il calendario non mostra giorni precedenti a questa data (avvio della piattaforma).
+const CALENDARIO_INIZIO = "2026-07-06";
 
 // Soglie colore copertura: numero di volontari registrati per quel turno/giorno.
 // 0 = urgente, 1-2 = scarso, 3 = medio, 4+ = ben coperto.
@@ -330,6 +333,10 @@ function renderCalendar() {
   const month = calViewDate.getMonth();
   document.getElementById("cal-title").textContent = `${MESI[month]} ${year}`;
 
+  const [inizioYear, inizioMonth] = CALENDARIO_INIZIO.split("-").map(Number);
+  const isStartMonth = year === inizioYear && month === inizioMonth - 1;
+  document.getElementById("cal-prev").disabled = isStartMonth;
+
   const firstOfMonth = new Date(year, month, 1);
   const startOffset = (firstOfMonth.getDay() + 6) % 7; // lunedì = 0
   const gridStart = new Date(year, month, 1 - startOffset);
@@ -341,6 +348,12 @@ function renderCalendar() {
     const d = new Date(gridStart);
     d.setDate(gridStart.getDate() + i);
     const key = toDateKey(d);
+
+    if (key < CALENDARIO_INIZIO) {
+      html += `<div class="cal-day cal-day-blank"></div>`;
+      continue;
+    }
+
     const dayEntries = byDate[key] || [];
     const isOutside = d.getMonth() !== month;
     const isToday = key === todayKey();
@@ -367,7 +380,7 @@ function renderCalendar() {
   }
   const grid = document.getElementById("cal-grid");
   grid.innerHTML = html;
-  grid.querySelectorAll(".cal-day").forEach((cell) => {
+  grid.querySelectorAll(".cal-day[data-date]").forEach((cell) => {
     cell.addEventListener("click", () => openDayDetail(cell.dataset.date));
   });
 }

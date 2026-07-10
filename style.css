@@ -197,6 +197,11 @@ h1, h2, h3 { margin: 0; }
   color: var(--color-brown);
 }
 
+.cal-nav button:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
 .cal-nav h2 {
   font-size: 17px;
   text-transform: capitalize;
@@ -237,6 +242,11 @@ h1, h2, h3 { margin: 0; }
 
 .cal-day.has-data { cursor: pointer; }
 .cal-day.has-data:hover { border-color: var(--color-yellow-dark); }
+
+.cal-day-blank {
+  background: transparent;
+  border-color: transparent;
+}
 
 .cal-day.is-outside { opacity: 0.32; }
 .cal-day.is-today { border: 2px solid var(--color-yellow-dark); font-weight: 700; }
