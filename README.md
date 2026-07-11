@@ -71,6 +71,19 @@ Quando si registra una presenza compare una foto vera del canile (scelta a caso 
 
 Il logo ufficiale dell'associazione è in [assets/logo.jpg](assets/logo.jpg), usato sia nell'header sia come icona del sito.
 
+## 7. Backup e ripristino
+
+Nella scheda **Log**, in fondo, ci sono due pulsanti:
+
+- **💾 Salva dati** — scarica subito un file `.json` con tutti gli inserimenti e il log.
+- **♻️ Ripristina** — carica un file di backup precedente. ⚠️ Sostituisce **tutti** i dati attuali con quelli del file (viene chiesta conferma prima di procedere, e l'azione non è reversibile).
+
+Inoltre, ogni notte alle ~2:00 (ora italiana) un workflow di GitHub Actions ([.github/workflows/backup.yml](.github/workflows/backup.yml)) scarica automaticamente tutti i dati da Firestore e li salva nella cartella [backups/](backups/) del repository: un file datato per ogni giorno (`backup_YYYY-MM-DD.json`) più un `backups/latest.json` sempre aggiornato. Non serve alcuna configurazione: usa la stessa lettura pubblica di Firestore già in uso nell'app. Il file scaricato da lì è compatibile con il pulsante "Ripristina" dell'app.
+
+**Per ricevere una notifica quando parte il backup notturno**: sulla pagina del repository GitHub, clicca **Watch** (in alto a destra) → **Custom** → seleziona **Pushes** → **Apply**. Riceverai una notifica (email o su GitHub, a seconda delle tue impostazioni) ogni volta che viene salvato un nuovo backup.
+
+Per lanciare un backup manuale immediato (senza aspettare la notte), vai su GitHub → scheda **Actions** → **Backup notturno dati Firestore** → **Run workflow**.
+
 ## Struttura del progetto
 
 ```
@@ -81,6 +94,9 @@ firebase-config.js    chiavi del progetto Firebase (già configurate)
 assets/
   logo.jpg             logo associazione
   dog-happy-1/2/3.jpeg  foto mostrate a rotazione dopo una presenza
+backups/                backup notturni automatici (creati dal workflow, uno per data + latest.json)
+.github/workflows/
+  backup.yml            workflow che esegue il backup ogni notte
 ```
 
 Nessuna build, nessuna dipendenza da installare: sono solo file statici.

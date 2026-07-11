@@ -154,11 +154,25 @@
           <option value="creazione">Creazione</option>
           <option value="modifica">Modifica</option>
           <option value="eliminazione">Eliminazione</option>
+          <option value="ripristino">Ripristino</option>
         </select>
       </div>
       <div id="log-list"></div>
       <div class="load-more-wrap">
         <button id="log-load-more" class="btn btn-secondary hidden">Carica altri</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Backup e ripristino</h2>
+      <p class="entry-sub" style="margin-bottom:14px;">
+        Ogni notte un backup automatico di tutti i dati viene salvato nella cartella <code>backups/</code> del repository GitHub del progetto.
+        Da qui puoi anche scaricare un backup al volo o ripristinare i dati da un file salvato in precedenza (l'operazione sostituisce tutti i dati attuali).
+      </p>
+      <div class="form-actions">
+        <button type="button" id="btn-backup-save" class="btn btn-secondary">💾 Salva dati</button>
+        <button type="button" id="btn-backup-restore" class="btn btn-secondary">♻️ Ripristina</button>
+        <input type="file" id="input-backup-restore" accept="application/json" class="hidden" />
       </div>
     </div>
   </section>

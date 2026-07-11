@@ -126,6 +126,29 @@ const localBackend = {
     localStorage.setItem(LS_LOG_KEY, JSON.stringify(logEntries));
     notifyLog();
   },
+  async deleteLog(id) {
+    logEntries = logEntries.filter((l) => l.id !== id);
+    localStorage.setItem(LS_LOG_KEY, JSON.stringify(logEntries));
+    notifyLog();
+  },
+  // Come createEntry/createLog, ma preserva i timestamp originali (usate dal ripristino backup).
+  async restoreEntry(data) {
+    const entry = {
+      id: uid(), ...data,
+      createdAt: data.createdAt ? new Date(data.createdAt).getTime() : Date.now(),
+      updatedAt: data.updatedAt ? new Date(data.updatedAt).getTime() : Date.now(),
+    };
+    entries.push(entry);
+    localStorage.setItem(LS_ENTRIES_KEY, JSON.stringify(entries));
+    notifyEntries();
+    return entry.id;
+  },
+  async restoreLog(data) {
+    const item = { id: uid(), ...data, timestamp: data.timestamp ? new Date(data.timestamp).getTime() : Date.now() };
+    logEntries.push(item);
+    localStorage.setItem(LS_LOG_KEY, JSON.stringify(logEntries));
+    notifyLog();
+  },
 };
 
 /* ---- Backend: Firebase Firestore ---- */
@@ -176,6 +199,26 @@ const firestoreBackend = {
   async createLog(data) {
     const { collection, addDoc, serverTimestamp } = this._fns;
     await addDoc(collection(db, "log"), { ...data, timestamp: serverTimestamp() });
+  },
+  async deleteLog(id) {
+    const { doc, deleteDoc } = this._fns;
+    await deleteDoc(doc(db, "log", id));
+  },
+  // Come createEntry/createLog, ma preserva i timestamp originali (usate dal ripristino backup).
+  async restoreEntry(data) {
+    const { collection, addDoc } = this._fns;
+    const { createdAt, updatedAt, ...rest } = data;
+    const ref = await addDoc(collection(db, "entries"), {
+      ...rest,
+      createdAt: createdAt ? new Date(createdAt) : new Date(),
+      updatedAt: updatedAt ? new Date(updatedAt) : new Date(),
+    });
+    return ref.id;
+  },
+  async restoreLog(data) {
+    const { collection, addDoc } = this._fns;
+    const { timestamp, ...rest } = data;
+    await addDoc(collection(db, "log"), { ...rest, timestamp: timestamp ? new Date(timestamp) : new Date() });
   },
 };
 
@@ -712,7 +755,7 @@ function renderCoverageTable(list) {
    LOG
    ====================================================================== */
 
-const LOG_ICONS = { creazione: "➕", modifica: "✏️", eliminazione: "🗑️" };
+const LOG_ICONS = { creazione: "➕", modifica: "✏️", eliminazione: "🗑️", ripristino: "♻️" };
 let logPageSize = 30;
 
 function initLog() {
@@ -749,6 +792,86 @@ function renderLog() {
 }
 
 /* ======================================================================
+   BACKUP E RIPRISTINO
+   ====================================================================== */
+
+function initBackup() {
+  document.getElementById("btn-backup-save").addEventListener("click", exportBackup);
+  const fileInput = document.getElementById("input-backup-restore");
+  document.getElementById("btn-backup-restore").addEventListener("click", () => fileInput.click());
+  fileInput.addEventListener("change", (e) => {
+    const file = e.target.files[0];
+    fileInput.value = "";
+    if (file) restoreBackup(file);
+  });
+}
+
+function normalizeTimestamp(v) {
+  if (v && typeof v.toDate === "function") return v.toDate().toISOString();
+  if (typeof v === "number") return new Date(v).toISOString();
+  return v || null;
+}
+
+function exportBackup() {
+  const payload = {
+    exportedAt: new Date().toISOString(),
+    entries: entries.map((e) => ({ ...e, createdAt: normalizeTimestamp(e.createdAt), updatedAt: normalizeTimestamp(e.updatedAt) })),
+    log: logEntries.map((l) => ({ ...l, timestamp: normalizeTimestamp(l.timestamp) })),
+  };
+  const blob = new Blob([JSON.stringify(payload, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = `backup_scodinzolando_${todayKey()}.json`;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+  showToast("Backup scaricato.");
+}
+
+async function restoreBackup(file) {
+  let data;
+  try {
+    data = JSON.parse(await file.text());
+  } catch (err) {
+    showToast("File non valido: non è un JSON leggibile.", true);
+    return;
+  }
+  if (!Array.isArray(data.entries) || !Array.isArray(data.log)) {
+    showToast("File non valido: formato backup non riconosciuto.", true);
+    return;
+  }
+
+  const conferma = confirm(
+    `Ripristinare i dati da questo backup?\n\n` +
+    `Verranno eliminati TUTTI gli inserimenti e i log attuali (${entries.length} inserimenti, ${logEntries.length} eventi) ` +
+    `e sostituiti con quelli del file (${data.entries.length} inserimenti, ${data.log.length} eventi).\n\n` +
+    `L'operazione non è reversibile.`
+  );
+  if (!conferma) return;
+
+  showToast("Ripristino in corso…");
+  try {
+    await Promise.all(entries.map((e) => backend.deleteEntry(e.id)));
+    await Promise.all(logEntries.map((l) => backend.deleteLog(l.id)));
+
+    await Promise.all(data.entries.map(({ id, ...rest }) => backend.restoreEntry(rest)));
+    await Promise.all(data.log.map(({ id, ...rest }) => backend.restoreLog(rest)));
+
+    await backend.createLog({
+      azione: "ripristino",
+      persona: "",
+      dettagli: `Ripristino da backup del ${data.exportedAt ? new Date(data.exportedAt).toLocaleString("it-IT") : "?"} — ${data.entries.length} inserimenti`,
+    });
+    showToast("Ripristino completato.");
+  } catch (err) {
+    console.error(err);
+    showToast("Errore durante il ripristino.", true);
+  }
+}
+
+/* ======================================================================
    AVVIO
    ====================================================================== */
 
@@ -756,6 +879,7 @@ async function init() {
   initTabs();
   initModals();
   initExport();
+  initBackup();
   populatePersonSelects();
   initCalendar();
   initForm();
