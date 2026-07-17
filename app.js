@@ -4,19 +4,87 @@ import { firebaseConfig } from "./firebase-config.js";
    CONFIGURAZIONE — modifica qui elenco volontari e orari standard
    ====================================================================== */
 
+// Elenco provvisorio (soli nomi/soprannomi) — verrà aggiornato con nome e cognome di ciascuno.
 // Aggiungi "responsabile: true" ai volontari che ricoprono un ruolo di responsabile.
 const VOLONTARI = [
-  { nome: "Anna Bianchi", responsabile: true },
-  { nome: "Marco Rossi", responsabile: false },
-  { nome: "Giulia Verdi", responsabile: false },
-  { nome: "Luca Ferrari", responsabile: false },
-  { nome: "Sara Romano", responsabile: false },
-  { nome: "Paolo Colombo", responsabile: false },
+  { nome: "Giulia", responsabile: false },
+  { nome: "Michi", responsabile: true },
+  { nome: "Alberto", responsabile: false },
+  { nome: "Eli", responsabile: false },
+  { nome: "Erika", responsabile: false },
+  { nome: "Laura", responsabile: false },
+  { nome: "Michi Junior", responsabile: false },
+  { nome: "Sonia", responsabile: false },
+  { nome: "Sabina", responsabile: false },
+  { nome: "Fabio Motta", responsabile: false },
+  { nome: "Veronica", responsabile: false },
+  { nome: "Cami", responsabile: false },
+  { nome: "Sonia 2", responsabile: false },
+  { nome: "Cinzia", responsabile: false },
+  { nome: "Ivano", responsabile: false },
+  { nome: "Betta", responsabile: false },
+  { nome: "Sofia", responsabile: false },
+  { nome: "Agata", responsabile: false },
+  { nome: "Alessandra Merlini", responsabile: false },
+  { nome: "Luigi", responsabile: false },
+  { nome: "Camilla", responsabile: false },
+  { nome: "Sofi", responsabile: false },
+  { nome: "Enzo", responsabile: false },
+  { nome: "Gloria", responsabile: false },
+  { nome: "Ross Alan", responsabile: false },
+  { nome: "IreLo", responsabile: false },
+  { nome: "Chiara Silvani", responsabile: false },
+  { nome: "Mirella", responsabile: false },
+  { nome: "Patri", responsabile: false },
+  { nome: "Patty", responsabile: false },
+  { nome: "Anna", responsabile: false },
+  { nome: "Ali", responsabile: false },
+  { nome: "Lorenzo", responsabile: false },
+  { nome: "Loren", responsabile: false },
+  { nome: "Loredana", responsabile: false },
+  { nome: "Anna 2", responsabile: false },
+  { nome: "Monica", responsabile: false },
+  { nome: "Luciana", responsabile: false },
+  { nome: "Cristina", responsabile: false },
+  { nome: "Marco Caneva", responsabile: false },
+  { nome: "Celeste", responsabile: false },
+  { nome: "Sabri", responsabile: false },
+  { nome: "Corinne", responsabile: false },
+  { nome: "Martina", responsabile: false },
+  { nome: "Rocco", responsabile: false },
+  { nome: "Maria Cristina", responsabile: false },
+  { nome: "Cinzia 2", responsabile: false },
+  { nome: "Criss", responsabile: false },
+  { nome: "Rossella", responsabile: false },
+  { nome: "Bea", responsabile: false },
+  { nome: "Alice", responsabile: false },
+  { nome: "Carolina", responsabile: false },
+  { nome: "Erikey", responsabile: false },
+  { nome: "Luisa", responsabile: false },
+  { nome: "Teresita", responsabile: false },
+  { nome: "Annie", responsabile: false },
+  { nome: "Eli Lisa", responsabile: false },
+  { nome: "Esty", responsabile: false },
+  { nome: "Marco Skate", responsabile: false },
+  { nome: "Grazi", responsabile: false },
+  { nome: "Valeria", responsabile: false },
+  { nome: "Alice 2", responsabile: false },
+  { nome: "Ros", responsabile: false },
+  { nome: "Melissa", responsabile: false },
+  { nome: "Costi", responsabile: false },
+  { nome: "Maddalena", responsabile: false },
+  { nome: "Ardo", responsabile: false },
+  { nome: "Lauretta", responsabile: false },
+  { nome: "Chiara 2", responsabile: false },
 ];
 
 function isResponsabile(persona) {
   const v = VOLONTARI.find((v) => v.nome === persona);
   return !!(v && v.responsabile);
+}
+
+function volontariOrdinati() {
+  return VOLONTARI.slice().sort((a, b) => a.nome.localeCompare(b.nome, "it"));
 }
 
 const ORARI_STANDARD = {
@@ -352,7 +420,7 @@ function populatePersonSelects() {
   selects.forEach(({ el, withAll }) => {
     el.innerHTML = "";
     if (withAll) el.appendChild(new Option("Tutti/e", ""));
-    VOLONTARI.forEach((v) => el.appendChild(new Option(v.responsabile ? `★ ${v.nome}` : v.nome, v.nome)));
+    volontariOrdinati().forEach((v) => el.appendChild(new Option(v.responsabile ? `★ ${v.nome}` : v.nome, v.nome)));
   });
 }
 
@@ -703,7 +771,7 @@ function renderPerPersonaStats(list) {
 
   const maxVal = Math.max(1, ...Object.values(counts));
 
-  const html = VOLONTARI.map((v) => `
+  const html = volontariOrdinati().map((v) => `
     <div class="bar-row">
       <div class="bar-name" title="${escapeHtml(v.nome)}">${v.responsabile ? `<strong>★ ${escapeHtml(v.nome)}</strong>` : escapeHtml(v.nome)}</div>
       <div class="bar-track"><div class="bar-fill" style="width:${(counts[v.nome] / maxVal) * 100}%"></div></div>
