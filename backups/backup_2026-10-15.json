@@ -1,0 +1,1421 @@
+{
+  "exportedAt": "2026-10-15T02:55:16.003561+00:00",
+  "entries": [
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraInizio": "",
+      "turno": "mattina",
+      "persona": "Miki",
+      "data": "2026-07-12",
+      "oraFine": "",
+      "excludeFromStats": true,
+      "createdAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "id": "060XLHENkrnsVe4tNeGJ"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "oraInizio": "",
+      "data": "2026-07-08",
+      "excludeFromStats": true,
+      "persona": "Maria Cristina",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "note": "",
+      "id": "4RwCYws7rnYRSBec0eXb"
+    },
+    {
+      "oraInizio": "",
+      "oraFine": "",
+      "persona": "Ire",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "data": "2026-07-07",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "note": "",
+      "id": "5C65ODMWWeqQnrMXOn7S"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "turno": "mattina",
+      "oraInizio": "",
+      "persona": "Cami",
+      "note": "",
+      "oraFine": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-08",
+      "id": "5aczYx4QsGwF2QqMEsMs"
+    },
+    {
+      "turno": "mattina",
+      "note": "",
+      "persona": "Sofia",
+      "oraFine": "",
+      "oraInizio": "",
+      "excludeFromStats": true,
+      "data": "2026-07-08",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "7COxMGr5FRmSewpCeZoU"
+    },
+    {
+      "oraFine": "",
+      "persona": "Marco P.",
+      "data": "2026-07-09",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "oraInizio": "",
+      "excludeFromStats": true,
+      "turno": "mattina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "7x7g6VGO9tQbJT3UQA8F"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "persona": "Luisa",
+      "turno": "pomeriggio",
+      "oraFine": "",
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-06",
+      "id": "8cnmrzXLVF2vlIGPxYKG"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "data": "2026-07-11",
+      "turno": "pomeriggio",
+      "persona": "Betta",
+      "oraInizio": "",
+      "oraFine": "",
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "9YANq2aXV1N4iEBsO5sN"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-12",
+      "note": "",
+      "oraFine": "",
+      "persona": "Agata",
+      "oraInizio": "",
+      "turno": "mattina",
+      "excludeFromStats": true,
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "id": "9vQWIJyeJ0315zkSjGhH"
+    },
+    {
+      "excludeFromStats": true,
+      "note": "",
+      "data": "2026-07-10",
+      "oraFine": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "persona": "Chiara",
+      "turno": "mattina",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraInizio": "",
+      "id": "A4Am8m6fAdg8BcJMuYUL"
+    },
+    {
+      "data": "2026-07-08",
+      "oraInizio": "",
+      "turno": "pomeriggio",
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "persona": "Isa",
+      "oraFine": "",
+      "id": "ApRNRV7rIYMXmu834uYE"
+    },
+    {
+      "persona": "Sonia",
+      "oraInizio": "",
+      "oraFine": "",
+      "excludeFromStats": true,
+      "data": "2026-07-07",
+      "turno": "mattina",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "BSH8SNT3fzFXRapxnmRB"
+    },
+    {
+      "oraFine": "",
+      "note": "",
+      "oraInizio": "",
+      "persona": "Alberto",
+      "data": "2026-07-06",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "excludeFromStats": true,
+      "id": "EVA7PGE03hTanAVx44hY"
+    },
+    {
+      "turno": "pomeriggio",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "persona": "Laura T.",
+      "oraInizio": "",
+      "oraFine": "",
+      "data": "2026-07-12",
+      "excludeFromStats": true,
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "Ejsgfq9NleMqUAcPlmsC"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "turno": "pomeriggio",
+      "persona": "Giuly",
+      "data": "2026-07-07",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "oraInizio": "",
+      "note": "",
+      "id": "ExQQPyhrCScehO2zxThr"
+    },
+    {
+      "oraInizio": "",
+      "turno": "pomeriggio",
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-12",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "persona": "Annie",
+      "excludeFromStats": true,
+      "oraFine": "",
+      "id": "FUxnObNPKAqMwzLFJCxQ"
+    },
+    {
+      "oraFine": "",
+      "persona": "Beppe",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-09",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "excludeFromStats": true,
+      "turno": "mattina",
+      "oraInizio": "",
+      "id": "I1mp4b81XQXfI3UEFv2H"
+    },
+    {
+      "turno": "mattina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "data": "2026-07-09",
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "persona": "Estyy",
+      "oraFine": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "id": "ICJBS0pLGG8IgoTqe2MT"
+    },
+    {
+      "note": "",
+      "turno": "pomeriggio",
+      "excludeFromStats": true,
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "persona": "Sonia",
+      "data": "2026-07-07",
+      "oraFine": "",
+      "oraInizio": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "IjSwhb912h98MOMeKqJl"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "data": "2026-07-10",
+      "oraFine": "",
+      "oraInizio": "",
+      "persona": "Sofi",
+      "note": "",
+      "turno": "pomeriggio",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "id": "IzPXzv55lWLnSUmAMOpB"
+    },
+    {
+      "oraFine": "",
+      "persona": "Celeste",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "data": "2026-07-08",
+      "oraInizio": "",
+      "turno": "pomeriggio",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "JRGIMdqcgpSd7g7yDDrL"
+    },
+    {
+      "oraInizio": "",
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-07",
+      "oraFine": "",
+      "turno": "pomeriggio",
+      "persona": "Sabina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "L4o5d3kH29bfMzxmdsB9"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "turno": "mattina",
+      "persona": "Cris8",
+      "data": "2026-07-10",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "excludeFromStats": true,
+      "note": "",
+      "oraInizio": "",
+      "id": "M1dAU4OODNyUgicTnIqm"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "oraInizio": "",
+      "data": "2026-07-09",
+      "excludeFromStats": true,
+      "oraFine": "",
+      "turno": "pomeriggio",
+      "persona": "Rosita",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "MJ8qOER9B5MGYcI3Zv4X"
+    },
+    {
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "mattina",
+      "data": "2026-07-07",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "note": "2 ore",
+      "persona": "Beppe",
+      "oraFine": "",
+      "id": "MLmGnnnUhNHLv3aTwHuH"
+    },
+    {
+      "excludeFromStats": true,
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "persona": "Erikey",
+      "oraInizio": "",
+      "data": "2026-07-07",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "turno": "pomeriggio",
+      "id": "McBnzcHiqClnhzMpVphn"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "persona": "Bea",
+      "note": "",
+      "turno": "mattina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-11",
+      "id": "ObR7urwb08Zxx7MdobPc"
+    },
+    {
+      "data": "2026-07-08",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "excludeFromStats": true,
+      "persona": "Anna",
+      "note": "",
+      "oraInizio": "",
+      "oraFine": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "Oto1Eolr9ukIOq2oW9z3"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "excludeFromStats": true,
+      "persona": "Costi",
+      "oraInizio": "",
+      "oraFine": "",
+      "note": "",
+      "data": "2026-07-06",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "R3t31BBryAQupl1gjyq9"
+    },
+    {
+      "oraInizio": "",
+      "oraFine": "",
+      "excludeFromStats": true,
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "persona": "Fabio",
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "turno": "mattina",
+      "data": "2026-07-06",
+      "id": "RW62CJgvdaAPyrJ0HdrV"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "persona": "Monica",
+      "oraFine": "",
+      "oraInizio": "",
+      "turno": "mattina",
+      "excludeFromStats": true,
+      "note": "",
+      "data": "2026-07-12",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "RkMM3Nyg5QKiBxPbw6He"
+    },
+    {
+      "oraInizio": "",
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-11",
+      "turno": "pomeriggio",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "persona": "Laura",
+      "excludeFromStats": true,
+      "id": "SR666uGWPW5G3OTJy6JT"
+    },
+    {
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "persona": "Corinne",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "turno": "mattina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-10",
+      "note": "",
+      "id": "T1Py1IAiFcOPLx9LoqF4"
+    },
+    {
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-06",
+      "turno": "mattina",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "persona": "Alice A.",
+      "oraInizio": "",
+      "excludeFromStats": true,
+      "id": "UNhGi6BjqtiZBnfgEPD5"
+    },
+    {
+      "data": "2026-07-10",
+      "turno": "pomeriggio",
+      "persona": "Elops",
+      "oraFine": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "id": "VAgcXNBGdn9fcHUqGTwc"
+    },
+    {
+      "oraFine": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "persona": "Michela M.",
+      "data": "2026-07-11",
+      "oraInizio": "",
+      "note": "",
+      "turno": "mattina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "VilzwwE3tultf5XH8rxw"
+    },
+    {
+      "data": "2026-07-09",
+      "turno": "mattina",
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "persona": "Loren",
+      "oraInizio": "",
+      "excludeFromStats": true,
+      "oraFine": "",
+      "id": "VuN1EN1nDn4Yox7UD0bZ"
+    },
+    {
+      "oraInizio": "",
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-11",
+      "oraFine": "",
+      "turno": "mattina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "persona": "Rosalba",
+      "excludeFromStats": true,
+      "id": "XPGmgaYAi4yD807LrOw9"
+    },
+    {
+      "note": "2 ore, fino alle 17",
+      "data": "2026-07-11",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "oraFine": "",
+      "excludeFromStats": true,
+      "persona": "Rosalba",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraInizio": "",
+      "id": "YWl8quGuijkVsCyy234i"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-08",
+      "note": "",
+      "oraInizio": "",
+      "turno": "mattina",
+      "oraFine": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "persona": "Sabri",
+      "id": "ZZ0HB1jb6hiYV4AhW5AQ"
+    },
+    {
+      "data": "2026-07-10",
+      "excludeFromStats": true,
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "mattina",
+      "persona": "Marco P.",
+      "oraInizio": "",
+      "id": "ZqtHHJFKNgFjB7JtiBsq"
+    },
+    {
+      "persona": "Cristina",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "turno": "pomeriggio",
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "note": "",
+      "data": "2026-07-08",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "a5NOhhpmHidW1pXCwj6f"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "data": "2026-07-09",
+      "oraInizio": "",
+      "note": "",
+      "turno": "pomeriggio",
+      "oraFine": "",
+      "persona": "Chiara",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "ag2ubSPQFnVgDN60TXiB"
+    },
+    {
+      "oraInizio": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "turno": "mattina",
+      "data": "2026-07-12",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "persona": "Laura T.",
+      "note": "",
+      "oraFine": "",
+      "id": "cKAvnG4uxswKoueFGR99"
+    },
+    {
+      "oraInizio": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "mattina",
+      "excludeFromStats": true,
+      "persona": "Marco C.",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "note": "",
+      "data": "2026-07-11",
+      "id": "cfKKHAnhXu1I10I2taKP"
+    },
+    {
+      "persona": "Anna T.",
+      "excludeFromStats": true,
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "turno": "pomeriggio",
+      "oraInizio": "",
+      "note": "Fino alle 18",
+      "data": "2026-07-10",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "cjxnHfnTTmZLcV5iUt3S"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "mattina",
+      "oraFine": "",
+      "data": "2026-07-08",
+      "oraInizio": "",
+      "persona": "Beppe",
+      "id": "cxEVmPW5itPO0bk3bj6I"
+    },
+    {
+      "persona": "Valeria",
+      "data": "2026-07-12",
+      "oraFine": "",
+      "turno": "pomeriggio",
+      "oraInizio": "",
+      "note": "",
+      "excludeFromStats": true,
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "dEUd9UXP3gzQxiDSBTos"
+    },
+    {
+      "data": "2026-07-12",
+      "turno": "pomeriggio",
+      "persona": "Miki",
+      "oraFine": "",
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "id": "dz58E8hzZYpMwLy7YJ3S"
+    },
+    {
+      "data": "2026-07-09",
+      "oraFine": "",
+      "persona": "Anna T.",
+      "oraInizio": "",
+      "note": "Dalle 16",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "excludeFromStats": true,
+      "id": "eFMnBAl11ZSTLj1LVl3n"
+    },
+    {
+      "persona": "Cinzia",
+      "oraFine": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "turno": "mattina",
+      "excludeFromStats": true,
+      "oraInizio": "",
+      "data": "2026-07-08",
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "id": "esO3tIfosIJGsxZHylNr"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-06",
+      "turno": "mattina",
+      "oraInizio": "",
+      "oraFine": "",
+      "persona": "Luciana",
+      "id": "eszlYmjpXqbpfdIrUlRu"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "oraInizio": "",
+      "data": "2026-07-08",
+      "excludeFromStats": true,
+      "persona": "Marco P.",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "turno": "mattina",
+      "id": "ev3crz3weGms7ZPIqHcZ"
+    },
+    {
+      "oraInizio": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "data": "2026-07-07",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "persona": "Miki",
+      "note": "Fino alle 16",
+      "oraFine": "",
+      "id": "fQZElZ5JrbQxIkm3LY7b"
+    },
+    {
+      "persona": "Melissa",
+      "excludeFromStats": true,
+      "turno": "pomeriggio",
+      "note": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "oraInizio": "",
+      "data": "2026-07-12",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "id": "hiFhTIfrXZjdY6sOUMgh"
+    },
+    {
+      "excludeFromStats": true,
+      "createdAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "persona": "Loredana",
+      "data": "2026-07-07",
+      "oraInizio": "",
+      "note": "Fino alle 16",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "id": "i9FPJjetzlDbwrS7oPhB"
+    },
+    {
+      "oraInizio": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "turno": "mattina",
+      "persona": "Anna T.",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-08",
+      "oraFine": "",
+      "excludeFromStats": true,
+      "note": "",
+      "id": "kFAep9qPsXnHyk7q8nMx"
+    },
+    {
+      "turno": "mattina",
+      "oraInizio": "",
+      "note": "Qualche ora",
+      "data": "2026-07-07",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "persona": "Erikey",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "id": "kbTC7xr3FjVM2vfy3fMw"
+    },
+    {
+      "excludeFromStats": true,
+      "createdAt": "2026-07-10T13:36:05Z",
+      "note": "1 ora",
+      "data": "2026-07-09",
+      "oraInizio": "",
+      "oraFine": "",
+      "turno": "pomeriggio",
+      "persona": "Miki",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "id": "ky8cGYsdomWEHO0YLGly"
+    },
+    {
+      "note": "",
+      "excludeFromStats": true,
+      "oraFine": "",
+      "data": "2026-07-08",
+      "persona": "Sonia",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "turno": "pomeriggio",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraInizio": "",
+      "id": "kyhgfz7Od8Ycv13MPQnD"
+    },
+    {
+      "turno": "mattina",
+      "persona": "Carolina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "note": "",
+      "excludeFromStats": true,
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-10",
+      "oraInizio": "",
+      "id": "mPgAPqL2cNYJgpb5cmAY"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-07",
+      "turno": "pomeriggio",
+      "excludeFromStats": true,
+      "note": "",
+      "persona": "Martina",
+      "oraInizio": "",
+      "oraFine": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "id": "mXItXSQA9XQHuiMTcX6T"
+    },
+    {
+      "excludeFromStats": true,
+      "createdAt": "2026-07-10T13:36:05Z",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-06",
+      "oraInizio": "",
+      "oraFine": "",
+      "note": "",
+      "turno": "mattina",
+      "persona": "Anna T.",
+      "id": "n0BZnZ7EyXmaWCIE8Qk0"
+    },
+    {
+      "oraInizio": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "data": "2026-07-11",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "oraFine": "",
+      "turno": "pomeriggio",
+      "persona": "Miki",
+      "id": "q6G27JoflKuk6U0ZtPit"
+    },
+    {
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-11",
+      "excludeFromStats": true,
+      "oraFine": "",
+      "note": "",
+      "persona": "Erica",
+      "oraInizio": "",
+      "turno": "mattina",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "id": "s9Q018EUqJ9Wk6GTaAo1"
+    },
+    {
+      "oraInizio": "",
+      "excludeFromStats": true,
+      "data": "2026-07-06",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "note": "",
+      "oraFine": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "persona": "Rosita",
+      "turno": "pomeriggio",
+      "id": "tE4cSYYR146Zwqrz8umo"
+    },
+    {
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraFine": "",
+      "persona": "Ivano",
+      "oraInizio": "",
+      "note": "",
+      "excludeFromStats": true,
+      "turno": "mattina",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-07",
+      "id": "uPTNKbOWs49wP11i9Dvu"
+    },
+    {
+      "excludeFromStats": true,
+      "oraFine": "",
+      "persona": "Camilla F.",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-08",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "oraInizio": "",
+      "note": "",
+      "turno": "pomeriggio",
+      "id": "y3UTNSlT1FVW0X51uHON"
+    },
+    {
+      "note": "",
+      "createdAt": "2026-07-10T13:36:05Z",
+      "data": "2026-07-10",
+      "excludeFromStats": true,
+      "turno": "pomeriggio",
+      "oraFine": "",
+      "updatedAt": "2026-07-10T13:36:05Z",
+      "persona": "Erikey",
+      "oraInizio": "",
+      "id": "zQa2TQyGNADDQaCFsSZo"
+    }
+  ],
+  "log": [
+    {
+      "persona": "Cristina",
+      "azione": "creazione",
+      "dettagli": "Cristina — 🌇 Pomeriggio (14:00–18:00) — Mer 8 Luglio 2026",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "0CzeaX8n96t9jQ3c9MlQ"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Chiara — 🌅 Mattina (09:00–13:00) — Ven 10 Luglio 2026",
+      "persona": "Chiara",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "id": "0rb8XaePBx5Jm5kaLo0h"
+    },
+    {
+      "dettagli": "Miki — 🌇 Pomeriggio (14:00–18:00) — Sab 11 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "persona": "Miki",
+      "excludeFromStats": true,
+      "id": "1Dbu4BBWmaSwTPdn7ywH"
+    },
+    {
+      "dettagli": "Annie — 🌇 Pomeriggio (14:00–18:00) — Dom 12 Luglio 2026",
+      "azione": "creazione",
+      "persona": "Annie",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "1HOH4Gj3Gz0MtUow5Py7"
+    },
+    {
+      "excludeFromStats": true,
+      "dettagli": "Sabri — 🌅 Mattina (09:00–13:00) — Mer 8 Luglio 2026",
+      "persona": "Sabri",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "2znSjMZoF4zep8UAx4tu"
+    },
+    {
+      "dettagli": "Laura T. — 🌇 Pomeriggio (14:00–18:00) — Dom 12 Luglio 2026",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "persona": "Laura T.",
+      "azione": "creazione",
+      "id": "3d7JuKMef2O0E6mbZEh6"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Rosalba — 🌇 Pomeriggio (14:00–18:00) — Sab 11 Luglio 2026",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "persona": "Rosalba",
+      "id": "4Vi2q0aDzQJN79bM4Fr5"
+    },
+    {
+      "excludeFromStats": true,
+      "persona": "Alice A.",
+      "dettagli": "Alice A. — 🌅 Mattina (09:00–13:00) — Lun 6 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "5ZNGC3Nv2E8Tht3wYWR2"
+    },
+    {
+      "dettagli": "Corinne — 🌅 Mattina (09:00–13:00) — Ven 10 Luglio 2026",
+      "azione": "creazione",
+      "persona": "Corinne",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "6278dRkuC1VrY53J8j6T"
+    },
+    {
+      "dettagli": "Marco P. — 🌅 Mattina (09:00–13:00) — Gio 9 Luglio 2026",
+      "persona": "Marco P.",
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "63B8sKEKWANY4BIvZdHt"
+    },
+    {
+      "azione": "creazione",
+      "dettagli": "Miki — 🌅 Mattina (09:00–13:00) — Dom 12 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "persona": "Miki",
+      "id": "CC3etTBivIXHrpKPTcFM"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "dettagli": "Marco P. — 🌅 Mattina (09:00–13:00) — Ven 10 Luglio 2026",
+      "persona": "Marco P.",
+      "excludeFromStats": true,
+      "id": "D7aFYqxZ8WK105wgSOGQ"
+    },
+    {
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "persona": "Bea",
+      "dettagli": "Bea — 🌅 Mattina (09:00–13:00) — Sab 11 Luglio 2026",
+      "id": "EbQY2nbHt0kBMDgXuieX"
+    },
+    {
+      "dettagli": "Beppe — 🌅 Mattina (09:00–13:00) — Gio 9 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "persona": "Beppe",
+      "excludeFromStats": true,
+      "id": "EntJKzk10H8ZVx3diIJw"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "dettagli": "Celeste — 🌇 Pomeriggio (14:00–18:00) — Mer 8 Luglio 2026",
+      "persona": "Celeste",
+      "azione": "creazione",
+      "id": "Etwh4wjqVHBjluNyr5dh"
+    },
+    {
+      "excludeFromStats": true,
+      "persona": "Monica",
+      "azione": "creazione",
+      "dettagli": "Monica — 🌅 Mattina (09:00–13:00) — Dom 12 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "GRFu2A2wJozuhLLKWKYC"
+    },
+    {
+      "persona": "Agata",
+      "dettagli": "Agata — 🌅 Mattina (09:00–13:00) — Dom 12 Luglio 2026",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "GZXbOQXfuLxFpnFhmsiL"
+    },
+    {
+      "persona": "Sonia",
+      "dettagli": "Sonia — 🌇 Pomeriggio (14:00–18:00) — Mar 7 Luglio 2026",
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "GpRf5ldX98iSfrfaThW3"
+    },
+    {
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "persona": "Maria Cristina",
+      "dettagli": "Maria Cristina — 🌇 Pomeriggio (14:00–18:00) — Mer 8 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "I7sXcmkWOxdKcaKXgGqI"
+    },
+    {
+      "persona": "Anna T.",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "dettagli": "Anna T. — 🌅 Mattina (09:00–13:00) — Mer 8 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "IaqjKie2LsETYuudF2o6"
+    },
+    {
+      "dettagli": "Beppe — 🌅 Mattina (09:00–13:00) — Mer 8 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "persona": "Beppe",
+      "id": "Mal8WsCAizEbE6oqEFcD"
+    },
+    {
+      "dettagli": "Anna T. — 🌇 Pomeriggio (14:00–18:00) — Gio 9 Luglio 2026",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "persona": "Anna T.",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "Mt9wm3PbHNThXG6ulhd9"
+    },
+    {
+      "persona": "Anna T.",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "dettagli": "Anna T. — 🌇 Pomeriggio (14:00–18:00) — Ven 10 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "Nar7EPJo7kBtsADhGHnS"
+    },
+    {
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:43:50.675Z",
+      "entryId": "Qf48Bjl08BsVS2Nt4LHM",
+      "dettagli": "Anna Bianchi — 🌅 Mattina (09:00–13:00) — Ven 10 Luglio 2026",
+      "persona": "Anna Bianchi",
+      "excludeFromStats": true,
+      "id": "NpwGsAi9g1rFg9umHceT"
+    },
+    {
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "persona": "Laura T.",
+      "dettagli": "Laura T. — 🌅 Mattina (09:00–13:00) — Dom 12 Luglio 2026",
+      "azione": "creazione",
+      "id": "O3lfgkfkdC80rigZOnna"
+    },
+    {
+      "persona": "Cris8",
+      "excludeFromStats": true,
+      "dettagli": "Cris8 — 🌅 Mattina (09:00–13:00) — Ven 10 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "OnhnYWTugiPTMpbbgHnP"
+    },
+    {
+      "dettagli": "Sonia — 🌅 Mattina (09:00–13:00) — Mar 7 Luglio 2026",
+      "persona": "Sonia",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "Owsr89QUkIiYH4bVp8gN"
+    },
+    {
+      "excludeFromStats": true,
+      "dettagli": "Luisa — 🌇 Pomeriggio (14:00–18:00) — Lun 6 Luglio 2026",
+      "persona": "Luisa",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "PwKHYgvnwKGdvIpbuqFW"
+    },
+    {
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Loren — 🌅 Mattina (09:00–13:00) — Gio 9 Luglio 2026",
+      "azione": "creazione",
+      "persona": "Loren",
+      "id": "QK7KdKmo2rnM7CG5ZEHi"
+    },
+    {
+      "persona": "Martina",
+      "dettagli": "Martina — 🌇 Pomeriggio (14:00–18:00) — Mar 7 Luglio 2026",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "ROe92mXDSlMjjnJVvAXx"
+    },
+    {
+      "dettagli": "Rosalba — 🌅 Mattina (09:00–13:00) — Sab 11 Luglio 2026",
+      "persona": "Rosalba",
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "RwpbHQYoQpCjejPxsAVn"
+    },
+    {
+      "persona": "Alberto",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "dettagli": "Alberto — 🌇 Pomeriggio (14:00–18:00) — Lun 6 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "SKx0lANcwzD6dBD1lgrh"
+    },
+    {
+      "persona": "Anna Bianchi",
+      "dettagli": "Anna Bianchi — 🌅 Mattina (09:00–13:00) — Ven 10 Luglio 2026",
+      "excludeFromStats": true,
+      "entryId": "Qf48Bjl08BsVS2Nt4LHM",
+      "timestamp": "2026-07-10T13:47:29.912Z",
+      "azione": "eliminazione",
+      "id": "SQwfSs35Z7uEutBUBl8R"
+    },
+    {
+      "azione": "creazione",
+      "persona": "Carolina",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Carolina — 🌅 Mattina (09:00–13:00) — Ven 10 Luglio 2026",
+      "excludeFromStats": true,
+      "id": "T9zjcINWuuTSq7QDptZF"
+    },
+    {
+      "persona": "Rosita",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "dettagli": "Rosita — 🌇 Pomeriggio (14:00–18:00) — Lun 6 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "VvHjOjDd95LbpPtSb3H7"
+    },
+    {
+      "dettagli": "Sonia — 🌇 Pomeriggio (14:00–18:00) — Mer 8 Luglio 2026",
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "persona": "Sonia",
+      "excludeFromStats": true,
+      "id": "W1FBAhrAzn3XqRtyy8JU"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "persona": "Betta",
+      "azione": "creazione",
+      "dettagli": "Betta — 🌇 Pomeriggio (14:00–18:00) — Sab 11 Luglio 2026",
+      "id": "Wh4fmUJl1VN49SnOxJzC"
+    },
+    {
+      "persona": "Costi",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Costi — 🌇 Pomeriggio (14:00–18:00) — Lun 6 Luglio 2026",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "id": "Y2KEG1ELdRuhTDZz1I5w"
+    },
+    {
+      "azione": "creazione",
+      "persona": "Erikey",
+      "dettagli": "Erikey — 🌇 Pomeriggio (14:00–18:00) — Mar 7 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "YmRcwHOzixmB78esKY7p"
+    },
+    {
+      "dettagli": "Valeria — 🌇 Pomeriggio (14:00–18:00) — Dom 12 Luglio 2026",
+      "persona": "Valeria",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "id": "aSPg7SDWOiNLhnnL9Hw6"
+    },
+    {
+      "persona": "Erica",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "dettagli": "Erica — 🌅 Mattina (09:00–13:00) — Sab 11 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "abqslzaKHGWexZNgZtmv"
+    },
+    {
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Beppe — 🌅 Mattina (09:00–13:00) — Mar 7 Luglio 2026",
+      "azione": "creazione",
+      "persona": "Beppe",
+      "id": "astGb1UZafW1DwaThTyp"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "persona": "Sabina",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "dettagli": "Sabina — 🌇 Pomeriggio (14:00–18:00) — Mar 7 Luglio 2026",
+      "id": "bIsJx5h7lONxcAPdFNj0"
+    },
+    {
+      "excludeFromStats": true,
+      "dettagli": "Sofia — 🌅 Mattina (09:00–13:00) — Mer 8 Luglio 2026",
+      "persona": "Sofia",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "baEELgPbrbuWCpqjgbPA"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "persona": "Giuly",
+      "azione": "creazione",
+      "dettagli": "Giuly — 🌇 Pomeriggio (14:00–18:00) — Mar 7 Luglio 2026",
+      "excludeFromStats": true,
+      "id": "dxa8nwKDCNkjVpn2DIUT"
+    },
+    {
+      "persona": "Marco C.",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "dettagli": "Marco C. — 🌅 Mattina (09:00–13:00) — Sab 11 Luglio 2026",
+      "id": "fONbJW6ICPXDAfKNb8FF"
+    },
+    {
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Sofi — 🌇 Pomeriggio (14:00–18:00) — Ven 10 Luglio 2026",
+      "persona": "Sofi",
+      "azione": "creazione",
+      "id": "gzop6me4dpimzF73nCve"
+    },
+    {
+      "persona": "Isa",
+      "azione": "creazione",
+      "dettagli": "Isa — 🌇 Pomeriggio (14:00–18:00) — Mer 8 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "hn01o4E5L5iGV0wWSOC0"
+    },
+    {
+      "azione": "creazione",
+      "persona": "Anna",
+      "dettagli": "Anna — 🌇 Pomeriggio (14:00–18:00) — Mer 8 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "iKOsquvapqCYvU3jiJen"
+    },
+    {
+      "dettagli": "Miki — 🌇 Pomeriggio (14:00–18:00) — Gio 9 Luglio 2026",
+      "persona": "Miki",
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "kGGIPuZC7NCxjTa6TAvg"
+    },
+    {
+      "azione": "creazione",
+      "persona": "Erikey",
+      "excludeFromStats": true,
+      "dettagli": "Erikey — 🌅 Mattina (09:00–13:00) — Mar 7 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "kPG1Sjy1b8GdQ8uM844k"
+    },
+    {
+      "persona": "Fabio",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "dettagli": "Fabio — 🌅 Mattina (09:00–13:00) — Lun 6 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "kbEgGBMMQPdP43kF80RW"
+    },
+    {
+      "persona": "Miki",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Miki — 🌇 Pomeriggio (14:00–18:00) — Mar 7 Luglio 2026",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "id": "muiQsoQeFpRoWIWOHp2r"
+    },
+    {
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Laura — 🌇 Pomeriggio (14:00–18:00) — Sab 11 Luglio 2026",
+      "persona": "Laura",
+      "azione": "creazione",
+      "id": "o2mCnywYJ7pbtN8PQJUE"
+    },
+    {
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Erikey — 🌇 Pomeriggio (14:00–18:00) — Ven 10 Luglio 2026",
+      "excludeFromStats": true,
+      "persona": "Erikey",
+      "id": "oCxmHUmsagJDLRWM6KPS"
+    },
+    {
+      "dettagli": "Anna Bianchi — 🌇 Pomeriggio (14:00–18:00) — Ven 10 Luglio 2026",
+      "azione": "creazione",
+      "persona": "Anna Bianchi",
+      "timestamp": "2026-07-10T13:53:08.634Z",
+      "entryId": "kzIxX8EyUyP5nnEV1kbQ",
+      "id": "oYe13Tj2wBoiUwDCAFae"
+    },
+    {
+      "persona": "Ivano",
+      "dettagli": "Ivano — 🌅 Mattina (09:00–13:00) — Mar 7 Luglio 2026",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "id": "ow4upTTonjqNtkRsRUpo"
+    },
+    {
+      "persona": "Miki",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Miki — 🌇 Pomeriggio (14:00–18:00) — Dom 12 Luglio 2026",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "id": "pCplrHckxcMzWV2Nlp9r"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Ire — 🌇 Pomeriggio (14:00–18:00) — Mar 7 Luglio 2026",
+      "excludeFromStats": true,
+      "persona": "Ire",
+      "azione": "creazione",
+      "id": "pjoJS6nWoFU7hRmayLWn"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "dettagli": "Camilla F. — 🌇 Pomeriggio (14:00–18:00) — Mer 8 Luglio 2026",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "persona": "Camilla F.",
+      "id": "rMEYy6tgomOSreaUzty4"
+    },
+    {
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "persona": "Cinzia",
+      "dettagli": "Cinzia — 🌅 Mattina (09:00–13:00) — Mer 8 Luglio 2026",
+      "azione": "creazione",
+      "id": "siVtAjSwAl5JEysa2e6C"
+    },
+    {
+      "persona": "Estyy",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "dettagli": "Estyy — 🌅 Mattina (09:00–13:00) — Gio 9 Luglio 2026",
+      "azione": "creazione",
+      "id": "tod7SbSZGEgrMHKdDgWe"
+    },
+    {
+      "persona": "Cami",
+      "dettagli": "Cami — 🌅 Mattina (09:00–13:00) — Mer 8 Luglio 2026",
+      "excludeFromStats": true,
+      "azione": "creazione",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "tra265u4rwBovJsHhFFl"
+    },
+    {
+      "dettagli": "Michela M. — 🌅 Mattina (09:00–13:00) — Sab 11 Luglio 2026",
+      "persona": "Michela M.",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "twXoqTBIyrc0G6oNtxGY"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "dettagli": "Elops — 🌇 Pomeriggio (14:00–18:00) — Ven 10 Luglio 2026",
+      "persona": "Elops",
+      "azione": "creazione",
+      "id": "uD1ok1QCnFwlgC7MSrQh"
+    },
+    {
+      "persona": "Melissa",
+      "dettagli": "Melissa — 🌇 Pomeriggio (14:00–18:00) — Dom 12 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "id": "wJ1sEtrr3hjFpUpSKvlq"
+    },
+    {
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "dettagli": "Loredana — 🌇 Pomeriggio (14:00–18:00) — Mar 7 Luglio 2026",
+      "azione": "creazione",
+      "persona": "Loredana",
+      "id": "wxfNCRIUee6d7IiGFCz7"
+    },
+    {
+      "dettagli": "Chiara — 🌇 Pomeriggio (14:00–18:00) — Gio 9 Luglio 2026",
+      "azione": "creazione",
+      "persona": "Chiara",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "excludeFromStats": true,
+      "id": "xNcD9gCqoSA1HmNAAXVg"
+    },
+    {
+      "persona": "Rosita",
+      "dettagli": "Rosita — 🌇 Pomeriggio (14:00–18:00) — Gio 9 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "id": "xOUCl7MOSxsxVDTZp4ok"
+    },
+    {
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "dettagli": "Luciana — 🌅 Mattina (09:00–13:00) — Lun 6 Luglio 2026",
+      "persona": "Luciana",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "id": "xcs5oTFfNRr1cpEYBnZf"
+    },
+    {
+      "dettagli": "Marco P. — 🌅 Mattina (09:00–13:00) — Mer 8 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "persona": "Marco P.",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "id": "xpsiuUw3xz7avdA5zyqC"
+    },
+    {
+      "persona": "Anna T.",
+      "dettagli": "Anna T. — 🌅 Mattina (09:00–13:00) — Lun 6 Luglio 2026",
+      "timestamp": "2026-07-10T13:36:05Z",
+      "azione": "creazione",
+      "excludeFromStats": true,
+      "id": "yX1HhfZMSRBeeOKSj0T0"
+    },
+    {
+      "dettagli": "Anna Bianchi — 🌇 Pomeriggio (14:00–18:00) — Ven 10 Luglio 2026",
+      "entryId": "kzIxX8EyUyP5nnEV1kbQ",
+      "azione": "eliminazione",
+      "persona": "Anna Bianchi",
+      "timestamp": "2026-07-10T13:55:47.137Z",
+      "id": "z4q1XRe5bX8NxWBIZaxv"
+    }
+  ]
+}
